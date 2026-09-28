@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260928-05-9348092","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script>
+  <script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriScale Master</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --ink: #102a24;
+      --muted: #526b64;
+      --mint: #e9f8f1;
+      --aqua: #d9f6f3;
+      --sage: #cce8d9;
+      --teal: #087f70;
+      --teal-dark: #056355;
+      --line: #d1e7dc;
+      --surface: #ffffff;
+      --paper: #f4f9f6;
+    }
+    * { box-sizing: border-box; }
+    body { background: var(--paper); color: var(--ink); }
+    button, input { font: inherit; }
+    button:focus-visible, input:focus-visible { outline: 3px solid #10b981; outline-offset: 2px; }
+    .brand-mark {
+      width: 42px; height: 42px; border-radius: 14px; position: relative;
+      display: grid; place-items: center; color: #fff;
+      background: linear-gradient(135deg, #056355, #159c79 62%, #57c6a5);
+      box-shadow: 0 10px 24px rgba(8,127,112,.22), inset 0 1px rgba(255,255,255,.35);
+      flex: 0 0 auto; overflow: hidden;
+    }
+    .brand-mark svg { width: 31px; height: 31px; display: block; }
+    .brand-mark svg .logo-stroke { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+    .brand-mark svg .logo-fill { fill: rgba(255,255,255,.96); }
+    .brand-mark svg .logo-accent { fill: #b9f2d8; }
+    .app-shell { min-height: 100vh; }
+    .soft-card { background: var(--surface); border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(16,42,36,.05); }
+
+    /* EYE CATCHING CHAT BOT STYLING */
+    .chat-hero {
+      background: linear-gradient(170deg, #ffffff 0%, #f0faf5 50%, #e2f7f1 100%);
+      border: 2px solid #57c6a5;
+      box-shadow: 0 20px 50px -10px rgba(8, 127, 112, 0.22), 0 0 0 1px rgba(87, 198, 165, 0.35);
+      position: relative;
+    }
+    .chat-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, #087f70, #10b981, #06b6d4, #087f70);
+      background-size: 200% 100%;
+      border-radius: 2rem 2rem 0 0;
+      animation: gradientShift 6s linear infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+
+    .message-ai {
+      background: #ffffff;
+      border: 1px solid #c2e8d9;
+      box-shadow: 0 4px 15px rgba(8, 127, 112, 0.06);
+    }
+    .message-user {
+      background: linear-gradient(135deg, #087f70, #045247);
+      color: #ffffff;
+      box-shadow: 0 6px 18px rgba(8, 127, 112, 0.25);
+    }
+
+    /* EYE CATCHING ALTERNATIVE CARDS */
+    .alt-card {
+      transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+    .alt-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px -6px rgba(8, 127, 112, 0.16);
+    }
+    .card-direct {
+      background: #ffffff;
+      border: 1.5px solid #a7f3d0;
+      border-left: 6px solid #10b981;
+    }
+    .card-direct:hover { border-color: #10b981; }
+
+    .card-kettle {
+      background: #ffffff;
+      border: 1.5px solid #bae6fd;
+      border-left: 6px solid #0284c7;
+    }
+    .card-kettle:hover { border-color: #0284c7; }
+
+    .card-elite {
+      background: #ffffff;
+      border: 1.5px solid #ddd6fe;
+      border-left: 6px solid #8b5cf6;
+    }
+    .card-elite:hover { border-color: #8b5cf6; }
+
+    .custom-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #a2cfbd; border-radius: 20px; }
+    .custom-scroll::-webkit-scrollbar-track { background: transparent; }
+    .hidden { display: none !important; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/f7f78bb888aedc8b.editing_sdk.js" type="text/javascript" integrity="sha512-FnsIjjHYbuzZnvFce+wovjDrGOUu5OD5gu+V7whPsYYqDCayWnolRQ+eXrxs3zLkGluOVeM57qCWnB82hKGl2Q=="></script>
+  <script src="/_sdk/ddcab3e45959c817.resizing_sdk.js" type="text/javascript" integrity="sha512-VAviUKfZVzugWBSeULYjSljTX+nb84wc6Zzbx5GQaQgh6X2ISSjXi8eIiCDGdwDh10esJMY0+QFQgUy9NcrTlQ=="></script>
+</head>
+<body data-template-id="__page-root" class="app-shell font-sans" style="background: rgb(244, 249, 246);">
+  
+  <!-- ONBOARDING FLOW -->
+  <div id="onboardingModal" class="fixed inset-0 z-50 bg-emerald-950/30 backdrop-blur-md flex items-center justify-center p-4">
+    <section class="soft-card max-w-md w-full rounded-[2.2rem] p-6 sm:p-8 text-center border-emerald-200 shadow-2xl">
+      <div class="flex items-center justify-center gap-3 mb-7">
+        <div class="brand-mark" role="img" aria-label="NutriScale balanced nutrition logo">
+          <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+            <path class="logo-stroke" d="M20 8v22M12 30h16M8 13h24M8 13l-4 10h8L8 13Zm24 0-4 10h8l-4-10Z"></path>
+            <path class="logo-accent" d="M20 8c1.5-5 6-6.5 10-6-1 4.8-4.3 8.2-10 8.8C19.8 9.8 19.8 8.9 20 8Z"></path>
+            <path class="logo-fill" d="M20 8c-1.7-3.7-5-5.3-8.5-4.7 1.1 3.8 3.7 6.2 8.5 6.8V8Z"></path>
+          </svg>
+        </div>
+        <div class="text-left">
+          <div data-template-id="onboarding-brand" class="canva-text text-xl font-black tracking-tight text-emerald-950" style="color: rgb(23, 61, 53); font-weight: 800; font-size: 28px;">NutriScale</div>
+          <div data-template-id="onboarding-tagline" class="canva-text text-xs text-emerald-700" style="color: rgb(8, 127, 112); font-weight: 500; font-size: 14px;">Balanced choices, made practical.</div>
+        </div>
+      </div>
+
+      <!-- Step 0: User Profile -->
+      <div id="stepUser">
+        <span data-template-id="profile-setup-label" class="canva-tag inline-flex items-center gap-1.5 rounded-full bg-emerald-100 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-emerald-800" style="background: rgb(220, 246, 232); color: rgb(5, 99, 85);">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span> Profile setup
+        </span>
+        <h1 data-template-id="profile-heading" class="canva-text mt-3 text-2xl font-black text-emerald-950" style="color: rgb(23, 61, 53); font-weight: 800; font-size: 24px;">Enter as user</h1>
+        <p data-template-id="profile-helper" class="canva-text mt-2 text-sm text-slate-600" style="color: rgb(93, 117, 110); font-size: 15px;">Set up your nutrition workspace in a few quick steps.</p>
+        
+        <label data-template-id="username-label" class="canva-text mt-6 block text-left text-sm font-semibold text-emerald-950" style="color: rgb(23, 61, 53); font-weight: 600;">User name / Student ID</label> 
+        <input id="userNameInput" data-template-id="username-input" class="canva-input mt-2 w-full rounded-2xl border border-emerald-300 bg-white px-4 py-3 text-sm text-emerald-950 shadow-inner focus:border-emerald-600 focus:ring-2 focus:ring-emerald-200 transition" type="text" onkeydown="if(event.key==='Enter')handleUserSubmit()" placeholder="e.g. Keshav / MSRIT Student">
+        
+        <div id="existingProfilesContainer" class="hidden mt-4 text-left">
+          <p data-template-id="recent-users-label" class="canva-text mb-2 text-xs font-bold uppercase tracking-wider text-slate-500" style="color: rgb(93, 117, 110); font-weight: 700;">Recent users</p>
+          <div id="recentUsersList" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <button data-template-id="continue-language-button" class="canva-button mt-6 w-full rounded-2xl bg-emerald-700 px-4 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-800/25 transition hover:bg-emerald-800 active:scale-[0.99]" onclick="handleUserSubmit()" style="background: rgb(8, 127, 112);">Continue to language selection →</button>
+      </div>
+
+      <!-- Step 1: Language Selection -->
+      <div id="stepLanguage" class="hidden">
+        <button data-template-id="switch-user-button" class="canva-button mb-5 text-sm font-semibold text-emerald-700 hover:text-emerald-950" onclick="backToStep0()">← Switch user</button>
+        <h2 data-template-id="language-heading" class="canva-text text-2xl font-black text-emerald-950" style="color: rgb(23, 61, 53); font-weight: 800; font-size: 24px;">Choose voice &amp; language</h2>
+        <p data-template-id="language-helper" class="canva-text mt-2 text-sm text-slate-600" style="color: rgb(93, 117, 110); font-size: 15px;">Select your preferred voice assistance language.</p>
+        <div class="mt-6 grid gap-3">
+          <button data-template-id="hindi-language-button" class="canva-button flex items-center justify-between rounded-2xl border-2 border-emerald-200 bg-white px-5 py-4 text-left font-bold text-emerald-950 transition hover:border-emerald-600 hover:bg-emerald-50 hover:shadow-md" onclick="setInitialLanguage('hi-IN')">
+            <span class="flex items-center gap-2">🎙️ हिंदी (Hindi)</span>
+            <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-full">आगे बढ़ें →</span>
+          </button>
+          <button data-template-id="english-language-button" class="canva-button flex items-center justify-between rounded-2xl border-2 border-emerald-200 bg-white px-5 py-4 text-left font-bold text-emerald-950 transition hover:border-emerald-600 hover:bg-emerald-50 hover:shadow-md" onclick="setInitialLanguage('en-IN')">
+            <span class="flex items-center gap-2">🎙️ English (India)</span>
+            <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-full">Proceed →</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Per-Meal Budget Slider -->
+      <div id="stepBudget" class="hidden">
+        <button data-template-id="back-language-button" class="canva-button mb-5 text-sm font-semibold text-emerald-700 hover:text-emerald-950" onclick="backToStep1()">← Back</button>
+        <h2 data-template-id="budget-heading" class="canva-text text-2xl font-black text-emerald-950" style="color: rgb(23, 61, 53); font-weight: 800; font-size: 24px;">Set per-meal budget</h2>
+        <p data-template-id="budget-helper" class="canva-text mt-2 text-sm text-slate-600" style="color: rgb(93, 117, 110); font-size: 15px;">Choose a comfortable spending ceiling for each meal.</p>
+        <div class="mt-6 rounded-3xl bg-emerald-50/80 border border-emerald-200 p-5 text-left">
+          <div class="flex items-center justify-between">
+            <span data-template-id="target-ceiling-label" class="canva-text text-sm font-semibold text-slate-600">Target ceiling</span>
+            <span id="onboardingBudgetText" class="text-3xl font-black text-emerald-700 font-mono">₹250</span>
+          </div>
+          <input id="onboardingSlider" class="mt-5 w-full accent-emerald-700 cursor-pointer" type="range" min="20" max="1000" step="10" value="250" oninput="handleOnboardingSlider(this.value)">
+          <div class="mt-2 flex justify-between text-xs font-mono font-bold text-slate-500">
+            <span>₹20</span><span>₹250</span><span>₹500</span><span>₹1000</span>
+          </div>
+        </div>
+        <button data-template-id="launch-workspace-button" class="canva-button mt-6 w-full rounded-2xl bg-emerald-700 px-4 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-800/25 transition hover:bg-emerald-800 active:scale-[0.99]" onclick="confirmOnboarding()" style="background: rgb(8, 127, 112);">Launch workspace →</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- MAIN APP CONTAINER -->
+  <div id="mainApp" class="hidden">
+    <!-- Top Header -->
+    <header class="sticky top-0 z-40 border-b border-emerald-100 bg-white/95 backdrop-blur-md shadow-sm">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+        <div class="flex items-center gap-3">
+          <button data-template-id="switch-user-header-button" class="canva-button hidden rounded-xl border border-emerald-200 bg-emerald-50/60 px-3 py-2 text-xs font-bold text-emerald-800 hover:bg-emerald-100 sm:block transition" onclick="returnToOnboarding()">← Switch user</button>
+          <div class="brand-mark" role="img" aria-label="NutriScale balanced nutrition logo">
+            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+              <path class="logo-stroke" d="M20 8v22M12 30h16M8 13h24M8 13l-4 10h8L8 13Zm24 0-4 10h8l-4-10Z"></path>
+              <path class="logo-accent" d="M20 8c1.5-5 6-6.5 10-6-1 4.8-4.3 8.2-10 8.8C19.8 9.8 19.8 8.9 20 8Z"></path>
+              <path class="logo-fill" d="M20 8c-1.7-3.7-5-5.3-8.5-4.7 1.1 3.8 3.7 6.2 8.5 6.8V8Z"></path>
+            </svg>
+          </div>
+          <div>
+            <h1 data-template-id="main-brand-name" class="canva-text font-black tracking-tight text-emerald-950 leading-tight" style="color: rgb(23, 61, 53); font-weight: 800; font-size: 18px;">NutriScale</h1>
+            <p data-template-id="main-brand-description" class="canva-text text-xs text-slate-500" style="color: rgb(93, 117, 110);">Smart meal buffers · Budget-aware guidance</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <!-- RENAMED TO STORED MENU -->
+          <button class="rounded-xl border border-emerald-300 bg-emerald-50/80 px-3 py-2 text-xs font-bold text-emerald-900 hover:bg-emerald-100 shadow-sm transition" onclick="openCatalogPage()">
+            🍱 Stored Menu (<span id="topDbCounter">0</span>)
+          </button> 
+          <button class="rounded-xl border border-emerald-200 bg-white px-3 py-2 text-xs font-bold text-emerald-800 hover:bg-emerald-50 shadow-sm transition" onclick="openHistoryPage()">
+            📜 History (<span id="historyCounterBadge">0</span>)
+          </button> 
+          <span id="activeBudgetBadge" class="hidden rounded-xl bg-emerald-100 border border-emerald-200 px-3 py-2 text-xs font-black text-emerald-800 font-mono sm:block shadow-sm">₹250</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto grid max-w-7xl grid-cols-1 gap-6 p-4 sm:p-6 lg:grid-cols-12">
+      
+      <!-- ==================== LEFT COLUMN: EYE-CATCHING CHAT HERO ==================== -->
+      <section class="lg:col-span-5">
+        <div class="chat-hero flex min-h-[640px] flex-col rounded-[2.2rem] p-5 sm:p-6">
+          
+          <div class="flex items-start justify-between gap-3 border-b border-emerald-200/80 pb-4">
+            <div class="flex gap-3">
+              <div class="relative">
+                <div class="brand-mark !h-12 !w-12 shadow-lg shadow-emerald-700/25" role="img" aria-label="NutriScale balanced nutrition logo">
+                  <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+                    <path class="logo-stroke" d="M20 8v22M12 30h16M8 13h24M8 13l-4 10h8L8 13Zm24 0-4 10h8l-4-10Z"></path>
+                    <path class="logo-accent" d="M20 8c1.5-5 6-6.5 10-6-1 4.8-4.3 8.2-10 8.8C19.8 9.8 19.8 8.9 20 8Z"></path>
+                    <path class="logo-fill" d="M20 8c-1.7-3.7-5-5.3-8.5-4.7 1.1 3.8 3.7 6.2 8.5 6.8V8Z"></path>
+                  </svg>
+                </div>
+                <span class="absolute -bottom-0.5 -right-0.5 flex h-3.5 w-3.5">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-white"></span>
+                </span>
+              </div>
+              <div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <h2 data-template-id="chat-heading" class="canva-text text-xl font-black text-emerald-950 tracking-tight" style="color: rgb(23, 61, 53); font-weight: 800;">NutriScale AI</h2>
+                  <span data-template-id="chat-status-badge" class="canva-tag inline-flex items-center gap-1 rounded-full bg-emerald-700 px-2.5 py-0.5 text-[10px] font-bold text-white shadow-sm" style="background: rgb(8, 127, 112);">
+                    <svg class="w-3 h-3 text-emerald-200 inline" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    Clinical Verified
+                  </span>
+                </div>
+                <p data-template-id="chat-description" class="canva-text mt-0.5 text-xs font-medium text-emerald-800/80">Search 300+ dishes from Karnataka, UP, Delhi &amp; Mathikere.</p>
+              </div>
+            </div>
+            
+            <div class="flex rounded-xl border border-emerald-300 bg-white p-1 shadow-sm">
+              <button id="btnHindi" class="rounded-lg px-2.5 py-1 text-xs font-bold text-slate-500 transition" onclick="setLanguage('hi-IN')">हिंदी</button> 
+              <button id="btnEnglish" class="rounded-lg px-2.5 py-1 text-xs font-bold text-slate-500 transition" onclick="setLanguage('en-IN')">English</button>
+            </div>
+          </div>
+
+          <!-- Chat Conversation Scroll Stream -->
+          <div id="chatMessages" class="custom-scroll mt-4 flex-1 space-y-3 overflow-y-auto pr-1">
+            <div class="message-ai rounded-2xl p-4 text-sm leading-relaxed text-slate-700">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-800 flex items-center gap-1">
+                  <span>🤖</span> NutriScale Clinical Assistant
+                </span>
+                <span class="text-[10px] text-slate-400 font-mono">300+ Foods Indexed</span>
+              </div>
+              <p>Type any delicacy! Try <strong>Neer Dosa</strong>, <strong>Galouti Kebab</strong>, <strong>Chole Bhature</strong>, or <strong>Mathikere Egg Rice</strong>. I'll load direct meal buffers, light cooking hacks, and elite interventions within your budget.</p>
+            </div>
+          </div>
+
+          <!-- Quick Discovery Suggestion Pills -->
+          <div class="mt-3 flex items-center gap-1.5 overflow-x-auto pb-1 text-xs custom-scroll">
+            <span class="text-[10px] font-bold text-emerald-800 uppercase shrink-0">Try:</span>
+            <button type="button" onclick="document.getElementById('chatInput').value='CTR Dosa';document.querySelector('form').requestSubmit();" class="rounded-full bg-white/90 border border-emerald-300 hover:bg-emerald-100 text-emerald-900 px-2.5 py-0.5 font-semibold text-[11px] whitespace-nowrap shadow-xs transition">CTR Dosa</button>
+            <button type="button" onclick="document.getElementById('chatInput').value='Neer Dosa';document.querySelector('form').requestSubmit();" class="rounded-full bg-white/90 border border-emerald-300 hover:bg-emerald-100 text-emerald-900 px-2.5 py-0.5 font-semibold text-[11px] whitespace-nowrap shadow-xs transition">Neer Dosa</button>
+            <button type="button" onclick="document.getElementById('chatInput').value='Galouti Kebab';document.querySelector('form').requestSubmit();" class="rounded-full bg-white/90 border border-emerald-300 hover:bg-emerald-100 text-emerald-900 px-2.5 py-0.5 font-semibold text-[11px] whitespace-nowrap shadow-xs transition">Galouti Kebab</button>
+            <button type="button" onclick="document.getElementById('chatInput').value='Bisi Bele Bath';document.querySelector('form').requestSubmit();" class="rounded-full bg-white/90 border border-emerald-300 hover:bg-emerald-100 text-emerald-900 px-2.5 py-0.5 font-semibold text-[11px] whitespace-nowrap shadow-xs transition">Bisi Bele Bath</button>
+            <button type="button" onclick="document.getElementById('chatInput').value='Mathikere Egg Rice';document.querySelector('form').requestSubmit();" class="rounded-full bg-white/90 border border-emerald-300 hover:bg-emerald-100 text-emerald-900 px-2.5 py-0.5 font-semibold text-[11px] whitespace-nowrap shadow-xs transition">Mathikere Egg Rice</button>
+          </div>
+
+          <!-- Captured Keywords Dock -->
+          <div class="mt-2 rounded-2xl border border-emerald-200/90 bg-white/80 p-3 shadow-xs">
+            <div class="mb-1.5 flex items-center justify-between text-xs">
+              <span data-template-id="captured-keywords-label" class="canva-text font-bold text-emerald-900">Captured keywords</span> 
+              <span id="keywordCount" class="font-mono font-black text-emerald-700 bg-emerald-100 px-2 py-0.2 rounded-full">0</span>
+            </div>
+            <div id="capturedKeywordsContainer" class="flex min-h-6 flex-wrap gap-1.5 text-xs text-slate-400"></div>
+          </div>
+
+          <!-- Interactive Query Input Form -->
+          <form class="mt-3 flex gap-2" onsubmit="handleChatSubmit(event)">
+            <input id="chatInput" data-template-id="chat-input" class="canva-input min-w-0 flex-1 rounded-2xl border-2 border-emerald-300 bg-white px-4 py-3.5 text-sm text-emerald-950 placeholder-slate-400 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-200 transition" type="text" placeholder="Type dish: CTR Dosa, Neer Dosa, Galouti Kebab, Biryani..."> 
+            <button data-template-id="send-button" class="canva-button rounded-2xl bg-emerald-700 hover:bg-emerald-800 px-5 py-3.5 text-sm font-bold text-white shadow-md shadow-emerald-800/25 transition active:scale-95 flex items-center gap-1.5" type="submit" style="background: rgb(8, 127, 112);">
+              <span>Send</span>
+              <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ==================== RIGHT COLUMN: EYE-CATCHING ALTERNATIVES & BUFFERS ==================== -->
+      <section class="flex flex-col gap-4 lg:col-span-7">
+        
+        <!-- Live Budget Adjustment Slider Widget -->
+        <div class="soft-card rounded-3xl p-4 sm:p-5 border-emerald-200 shadow-sm">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">💰</div>
+              <div>
+                <span data-template-id="active-budget-label" class="canva-text text-[11px] font-bold uppercase tracking-wider text-slate-500">Active budget ceiling:</span> 
+                <span id="sliderValueText" class="ml-1 text-2xl font-black text-emerald-700 font-mono">₹250</span>
+              </div>
+            </div>
+            <div class="w-full sm:max-w-xs flex flex-col gap-1">
+              <input id="mainBudgetSlider" class="w-full accent-emerald-700 cursor-pointer" type="range" min="20" max="1000" step="10" value="250" oninput="handleMainSlider(this.value)">
+              <div class="flex justify-between text-[10px] font-mono text-slate-400 font-bold">
+                <span>₹20</span><span>₹250</span><span>₹500</span><span>₹1000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selected Meal Detail & Alternatives Hub -->
+        <div class="soft-card rounded-[2.2rem] p-5 sm:p-6 border-emerald-200 shadow-md">
+          
+          <div class="flex flex-col justify-between gap-3 border-b border-emerald-100 pb-4 sm:flex-row sm:items-start">
+            <div>
+              <div class="flex items-center gap-2">
+                <h2 id="detailTitle" class="text-xl font-black text-emerald-950">Awaiting Query...</h2>
+              </div>
+              <p id="detailDesc" class="mt-1 text-sm text-slate-600">Type a dish in chat or pick from stored units.</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span id="detailRiskBadge" class="rounded-full bg-slate-100 px-3.5 py-1 text-xs font-bold font-mono text-slate-500">STATUS</span> 
+              <button data-template-id="replay-audio-button" class="canva-button rounded-xl border border-emerald-300 bg-white px-3.5 py-1.5 text-xs font-bold text-emerald-800 hover:bg-emerald-50 shadow-xs transition flex items-center gap-1.5" onclick="speakSelectedOptimalGuidance()">
+                <span>🔊</span> <span>Replay audio</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Spoken Brief Banner -->
+          <div class="mt-4 rounded-2xl bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50/50 border border-emerald-200/80 p-4">
+            <div class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-800">
+              <span class="animate-pulse">🎙️</span> Automated Spoken Brief · <span id="voiceLangLabel" class="font-extrabold text-emerald-900 underline">English</span>
+            </div>
+            <p id="vernacularTextBox" class="mt-1.5 text-sm font-medium leading-relaxed text-emerald-950">Voice engine will narrate your best options within budget.</p>
+          </div>
+
+          <!-- Alternatives Tier Cards Scroll Area -->
+          <div class="custom-scroll mt-5 max-h-[58vh] space-y-5 overflow-y-auto pr-1">
+            
+            <!-- Category 1: Direct Meal Buffers -->
+            <div class="rounded-2xl bg-emerald-50/50 border border-emerald-200/60 p-4">
+              <div class="mb-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                  <h3 data-template-id="direct-category-heading" class="canva-text text-sm font-black uppercase tracking-wider text-emerald-950">Direct Meal Buffers</h3>
+                </div>
+                <span id="hiddenDirectCounter" class="text-xs font-mono font-medium text-slate-500"></span>
+              </div>
+              <div id="alternativesGrid" class="grid gap-3 sm:grid-cols-2"></div>
+            </div>
+
+            <!-- Category 2: Hostel Light-Cooking -->
+            <div class="rounded-2xl bg-cyan-50/50 border border-cyan-200/60 p-4">
+              <div class="mb-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+                  <h3 data-template-id="kettle-category-heading" class="canva-text text-sm font-black uppercase tracking-wider text-sky-950">⚡ Hostel Light-Cooking (Kettle / Induction)</h3>
+                </div>
+                <span id="hiddenKettleCounter" class="text-xs font-mono font-medium text-slate-500"></span>
+              </div>
+              <div id="kettleInductionGrid" class="grid gap-3 sm:grid-cols-2"></div>
+            </div>
+
+            <!-- Category 3: Elite Interventions -->
+            <div class="rounded-2xl bg-violet-50/50 border border-violet-200/60 p-4">
+              <div class="mb-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                  <h3 data-template-id="elite-category-heading" class="canva-text text-sm font-black uppercase tracking-wider text-purple-950">💎 Elite Tier Interventions</h3>
+                </div>
+                <span id="hiddenEliteCounter" class="text-xs font-mono font-medium text-slate-500"></span>
+              </div>
+              <div id="beyondThousandGrid" class="grid gap-3 sm:grid-cols-2"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <button data-template-id="comparison-open-button" class="canva-banner rounded-2xl border-2 border-emerald-300/80 bg-white hover:bg-emerald-50/80 px-5 py-4 text-left font-bold text-emerald-950 shadow-sm transition flex items-center justify-between group" onclick="openComparisonModal()">
+          <span class="flex items-center gap-2.5">
+            <span class="w-8 h-8 rounded-xl bg-emerald-100 flex items-center justify-center text-base">📊</span>
+            <span>View Metabolic Trajectory Spec Sheet &amp; 5 Long-Term Advantages</span>
+          </span>
+          <span class="text-emerald-700 group-hover:translate-x-1 transition font-bold text-sm">Expand Spec →</span>
+        </button>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- CLINICAL COMPARISON MODAL -->
+  <div id="comparisonModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-emerald-950/40 p-4 backdrop-blur-md">
+    <section class="custom-scroll soft-card max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-[2.2rem] p-6 border-emerald-200 shadow-2xl">
+      <div class="flex items-start justify-between gap-4 border-b border-emerald-100 pb-4">
+        <div class="flex gap-3">
+          <div class="brand-mark" role="img" aria-label="NutriScale balanced nutrition logo">
+            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+              <path class="logo-stroke" d="M20 8v22M12 30h16M8 13h24M8 13l-4 10h8L8 13Zm24 0-4 10h8l-4-10Z"></path>
+              <path class="logo-accent" d="M20 8c1.5-5 6-6.5 10-6-1 4.8-4.3 8.2-10 8.8C19.8 9.8 19.8 8.9 20 8Z"></path>
+              <path class="logo-fill" d="M20 8c-1.7-3.7-5-5.3-8.5-4.7 1.1 3.8 3.7 6.2 8.5 6.8V8Z"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 data-template-id="comparison-heading" class="canva-text text-xl font-black text-emerald-950" style="color: rgb(23, 61, 53); font-weight: 800; font-size: 20px;">10-Year Clinical Spec &amp; NutriScale Advantages</h2>
+            <p data-template-id="comparison-description" class="canva-text mt-1 text-sm text-slate-600" style="color: rgb(93, 117, 110); font-size: 15px;">A practical comparison of unbuffered meals and better-balanced interventions.</p>
+          </div>
+        </div>
+        <button class="rounded-xl bg-rose-50 px-3 py-2 font-bold text-rose-700 hover:bg-rose-100 transition" onclick="closeComparisonModal()">✕</button>
+      </div>
+
+      <div class="mt-5 grid gap-4 md:grid-cols-2">
+        <div class="rounded-3xl border border-rose-200 bg-rose-50/70 p-5">
+          <h3 data-template-id="harms-heading" class="canva-text font-black text-rose-800" style="color: rgb(159, 18, 57); font-weight: 800; font-size: 18px;">⚠️ Trajectory A: Unbuffered diet harms</h3>
+          <div id="modalHarmsList" class="mt-3 space-y-2 text-sm text-slate-700">
+            Select a meal to view specific risk biomarkers.
+          </div>
+        </div>
+        <div class="rounded-3xl border border-emerald-200 bg-emerald-50/70 p-5">
+          <h3 data-template-id="benefits-heading" class="canva-text font-black text-emerald-800" style="color: rgb(8, 127, 112); font-weight: 800; font-size: 18px;">🛡️ Trajectory B: NutriScale advantages</h3>
+          <ol class="mt-3 space-y-3 text-sm leading-relaxed text-slate-700">
+            <li><strong class="text-emerald-800">1. Pancreatic beta-cell preservation:</strong> Protein and fiber buffers blunt acute glucose surges.</li>
+            <li><strong class="text-emerald-800">2. Vascular endothelial protection:</strong> Nutrient-dense alternatives support healthier lipid choices.</li>
+            <li><strong class="text-emerald-800">3. Visceral adiposity suppression:</strong> Satiating proteins and fermented foods can curb cravings.</li>
+            <li><strong class="text-emerald-800">4. Hepatic support:</strong> Balanced options promote a less refined, more considered food routine.</li>
+            <li><strong class="text-emerald-800">5. Cognitive stamina:</strong> A steadier meal approach supports focused study and coding hours.</li>
+          </ol>
+        </div>
+      </div>
+      <button data-template-id="close-spec-button" class="canva-button mt-6 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white hover:bg-emerald-800 transition" onclick="closeComparisonModal()" style="background: rgb(8, 127, 112);">Close spec sheet</button>
+    </section>
+  </div>
+
+  <!-- STORED DATABASE CATALOG PAGE (RENAMED TO STORED MENU) -->
+  <div id="catalogPage" class="hidden min-h-screen bg-[#f4f9f6]">
+    <header class="border-b border-emerald-100 bg-white">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+        <div class="flex items-center gap-3">
+          <button class="rounded-xl border border-emerald-200 px-3 py-2 text-xs font-bold text-emerald-800 hover:bg-emerald-50 transition" onclick="closeCatalogPage()">← Back</button>
+          <div class="brand-mark" role="img" aria-label="NutriScale balanced nutrition logo">
+            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+              <path class="logo-stroke" d="M20 8v22M12 30h16M8 13h24M8 13l-4 10h8L8 13Zm24 0-4 10h8l-4-10Z"></path>
+              <path class="logo-accent" d="M20 8c1.5-5 6-6.5 10-6-1 4.8-4.3 8.2-10 8.8C19.8 9.8 19.8 8.9 20 8Z"></path>
+              <path class="logo-fill" d="M20 8c-1.7-3.7-5-5.3-8.5-4.7 1.1 3.8 3.7 6.2 8.5 6.8V8Z"></path>
+            </svg>
+          </div>
+          <div>
+            <h1 data-template-id="catalog-heading" class="canva-text font-black text-emerald-950" style="color: rgb(23, 61, 53); font-weight: 800; font-size: 26px;">Stored Menu Master Database</h1>
+            <p data-template-id="catalog-description" class="canva-text text-xs text-slate-500">300+ Delicacies: Karnataka, UP, Delhi &amp; Mathikere / MSRIT spots</p>
+          </div>
+        </div>
+        <span id="catalogCount" class="rounded-full bg-emerald-100 px-3.5 py-1.5 text-xs font-bold text-emerald-800 font-mono"></span>
+      </div>
+    </header>
+    <main class="mx-auto max-w-7xl p-4 sm:p-6">
+      <input id="catalogSearchInput" data-template-id="catalog-search-input" class="canva-input w-full rounded-2xl border border-emerald-300 bg-white px-4 py-3 text-sm text-emerald-950 shadow-sm" type="text" oninput="handleCatalogSearch(this.value)" placeholder="Search in 300+ menu items: Neer Dosa, Tunday, Chole Bhature, Kathi Roll, Bisi Bele Bath...">
+      <div id="catalogGrid" class="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
+    </main>
+  </div>
+
+  <!-- USER HISTORY PAGE -->
+  <div id="historyPage" class="hidden min-h-screen bg-[#f4f9f6]">
+    <header class="border-b border-emerald-100 bg-white">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+        <div class="flex items-center gap-3">
+          <button class="rounded-xl border border-emerald-200 px-3 py-2 text-xs font-bold text-emerald-800 hover:bg-emerald-50 transition" onclick="closeHistoryPage()">← Back</button>
+          <div class="brand-mark" role="img" aria-label="NutriScale balanced nutrition logo">
+            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+              <path class="logo-stroke" d="M20 8v22M12 30h16M8 13h24M8 13l-4 10h8L8 13Zm24 0-4 10h8l-4-10Z"></path>
+              <path class="logo-accent" d="M20 8c1.5-5 6-6.5 10-6-1 4.8-4.3 8.2-10 8.8C19.8 9.8 19.8 8.9 20 8Z"></path>
+              <path class="logo-fill" d="M20 8c-1.7-3.7-5-5.3-8.5-4.7 1.1 3.8 3.7 6.2 8.5 6.8V8Z"></path>
+            </svg>
+          </div>
+          <div>
+            <h1 data-template-id="history-heading" class="canva-text font-black text-emerald-950" style="color: rgb(23, 61, 53); font-weight: 800; font-size: 26px;">User history &amp; stored searches</h1>
+            <p data-template-id="history-description" class="canva-text text-xs text-slate-500">Your visited options, saved keywords and interventions</p>
+          </div>
+        </div>
+        <button data-template-id="clear-history-button" class="canva-button rounded-xl bg-rose-50 px-3 py-2 text-xs font-bold text-rose-700 hover:bg-rose-100 transition" onclick="clearUserHistory()" style="background: rgb(255, 241, 242); color: rgb(190, 18, 60);">Clear history</button>
+      </div>
+    </header>
+    <main class="mx-auto max-w-6xl p-4 sm:p-6">
+      <div class="soft-card rounded-3xl p-5 border-emerald-200">
+        <div class="flex items-center justify-between gap-4">
+          <div>
+            <h2 id="historyProfileName" class="text-lg font-black text-emerald-950">User</h2>
+            <p id="historyMeta" class="text-sm text-slate-600"></p>
+          </div>
+          <span id="historyTotalCount" class="rounded-2xl bg-emerald-100 px-4 py-3 text-xl font-black text-emerald-800 font-mono">0</span>
+        </div>
+      </div>
+      <div id="historyItemsContainer" class="mt-5 space-y-3"></div>
+    </main>
+  </div>
+
+  <!-- SCRIPT LOGIC WITH 300+ STORED MENU MASTER DATABASE -->
+  <script>
+    let currentUser = 'Guest', currentLang = 'en-IN', currentBudget = 250, activeKey = null, catalogSearchQuery = '';
+    const synth = window.speechSynthesis;
+    
+    // MASTER FOOD REPOSITORY INITIALIZATION
+    const foodDB = {};
+
+    // Standard clinical hacks generator for dishes
+    function createStandardHacks(dishType = 'carb') {
+      return [
+        {name:'Salted Spiced Majjige (300ml)', cost:20, healthScore:9.4, desc:'Lactic acid slows starch cleavage by 25%.'},
+        {name:'Double Boiled Farm Eggs', cost:20, healthScore:9.6, desc:'Supplies complete DIAAS amino acids to build skeletal muscle glucose sink.'},
+        {name:'Fresh Raw Malai Paneer (100g)', cost:50, healthScore:9.2, desc:'Intact casein and calcium buffer fast carbs.'},
+        {name:'Sprouted Moong & Chana Plate', cost:30, healthScore:9.3, desc:'Living enzymes and dietary fiber suppress reactive insulin spikes.'},
+        {name:'Standardized Berberine HCL 500mg', cost:95, healthScore:9.7, desc:'Potent AMPK activator that accelerates glucose clearance.'},
+        {name:'100% Grass-Fed Whey Isolate Sachet', cost:160, healthScore:9.5, desc:'27g pure bioavailable protein suppresses glucose peak by 40%.'},
+        {name:'Cold-Pressed Flax & Chia Trail Mix', cost:240, healthScore:9.0, desc:'Plant ALA omega-3 cushions arterial elasticity.'}
+      ];
+    }
+
+    // 1. MATHIKERE & MSRIT LOCAL FOOD DATASET (Student hotspots)
+    const mathikereSpecialties = [
+      { name: "CTR Shri Sagar Butter Masala Dosa", loc: "Malleshwaram 7th Cross", desc: "Signature crisp Benne Dosa dripping in butter with potato palya.", risk: "VERY HIGH", kws: ["ctr", "benne dosa", "butter dosa", "malleshwaram"] },
+      { name: "Shahi Darbar Double Chicken Kathi Roll", loc: "MSR Nagar / New BEL Road", desc: "Flaky paratha with grilled spiced chicken eaten by MSRIT students.", risk: "HIGH", kws: ["shahi darbar", "kathi roll", "bel road", "chicken roll"] },
+      { name: "Veena Stores Soft Idli & Crispy Vada", loc: "Malleshwaram 15th Cross", desc: "Fluffy steamed idlis & crispy medu vada soaked in mint-coconut chutney.", risk: "MODERATE", kws: ["veena stores", "idli vada", "malleshwaram", "vada"] },
+      { name: "Mathikere Corner Egg Fried Rice & Chilli Chicken", loc: "Mathikere Bus Stand", desc: "High-flame street style egg rice with spicy Andhra chilli chicken.", risk: "HIGH", kws: ["mathikere", "egg rice", "fried rice", "chilli chicken"] },
+      { name: "Asha Food Camp Mysore Masala Dosa", loc: "Malleshwaram", desc: "Classic red garlic paste roasted crisp dosa served with vegetable sagu.", risk: "HIGH", kws: ["asha food camp", "mysore masala dosa", "sagu"] },
+      { name: "BEL Road Midnight Chicken Shawarma Roll", loc: "New BEL Road", desc: "Garlic toum and shredded rotisserie chicken in kubboos bread.", risk: "HIGH", kws: ["shawarma", "bel road", "midnight roll", "chicken shawarma"] },
+      { name: "MSRIT Canteen Set Dosa & Coconut Chutney", loc: "Inside Campus", desc: "Trio of soft spongy set dosas served with mixed veg sagu.", risk: "MODERATE", kws: ["msrit canteen", "set dosa", "canteen food", "sponge dosa"] },
+      { name: "Gokul Veg Restaurant North Karnataka Thali", loc: "Mathikere Main Road", desc: "Hot Jolada rotti with stuffed brinjal ennegayi and shenga chutney.", risk: "MODERATE", kws: ["gokul", "jolada rotti", "mathikere thali", "ennegayi"] },
+      { name: "New BEL Road Cheesy Maggi & Cold Coffee", loc: "New BEL Road", desc: "Student midnight favorite double butter cheese masala maggi bowl.", risk: "VERY HIGH", kws: ["maggi", "cheese maggi", "cold coffee", "bel road"] },
+      { name: "Sanjaynagar Donne Biryani Mane", loc: "Sanjaynagar", desc: "Seeraga samba rice cooked in mint coriander paste with tender meat.", risk: "HIGH", kws: ["donne biryani", "biryani mane", "sanjaynagar", "seeraga"] },
+      { name: "Mathikere Kerala Mess Parotta & Beef Roast", loc: "Mathikere 1st Main", desc: "Flaky layered Malabar parotta with spicy slow-roasted meat.", risk: "VERY HIGH", kws: ["kerala mess", "parotta", "malabar parotta", "mathikere"] },
+      { name: "Sri Raghavendra Stores Malleshwaram Chow Chow Bath", loc: "Malleshwaram Rly Stn", desc: "Khara bath paired alongside sweet pineapple kesari bath.", risk: "HIGH", kws: ["chow chow bath", "khara bath", "kesari bath", "raghavendra"] }
+    ];
+
+    // 2. KARNATAKA STATE DELICACIES
+    const karnatakaDishes = [
+      "Davangere Benne Dosa with Aloo Palya", "Mangalore Neer Dosa with Kori Gassi", "Bisi Bele Bath with Boondi", 
+      "Mandya Ragi Mudde with Bassaru & Soppu Palya", "Spiced Akki Roti with Coconut Chutney", "Crispy Maddur Vada with Filter Coffee", 
+      "Udupi Goli Baje (Mangalore Bajji)", "Kundapura Chicken Ghee Roast", "Coorg Pandi Curry with Kadambuttu", 
+      "North Karnataka Jolada Rotti with Shenga Chutney", "Badanekayi Ennegayi (Stuffed Brinjal)", "Dharwad Pedha with Buffalo Khoya", 
+      "Mysore Pak with Pure Desi Ghee", "Mangalore Buns (Sweet Banana Puris)", "Chitranna (Lemon Peanuts Rice)", 
+      "Puliyogare (Tangy Tamarind Temple Rice)", "Vangi Bath (Brinjal Rice with Spices)", "Thatte Idli with Red Chilly Podi (Bidadi Style)", 
+      "Mangalore Fish Curry with Anjal Fry", "Karwar Prawns Sukka with Rice", "Bellary Girmit & Mirchi Bajji", 
+      "Malnad Kaad Mavinakayi Gojju", "Mysore Rasam with Steamed Rice", "Kosambari Salad with Moong Dal", 
+      "Obbattu / Holige with Warm Ghee", "Kotte Kadubu (Jackfruit Leaf Steamed Idli)", "Belagavi Kunda Sweet", 
+      "Gokak Karadantu Dry Fruit Sweet", "Hubli Chinchpeti Poha & Sev", "Bagalkot Shenga Holige"
+    ];
+
+    // 3. UTTAR PRADESH (UP) DELICACIES
+    const upDishes = [
+      "Lucknowi Dum Biryani with Burani Raita", "Tunday Kababi Melt-in-Mouth Galouti Kebab", "Awadhi Shahi Mutton Korma & Sheermal", 
+      "Varanasi Kachori Jalebi Morning Thali", "Banarasi Tamatar Chaat in Clay Kulhad", "Agra Petha & Dalmoth Mixture", 
+      "Mathura Peda with Condensed Buffalo Milk", "Bedmi Puri with Dubki Wale Aloo", "Moradabadi Moong Dal with Butter & Chutney", 
+      "Gorakhpuri Baati Chokha with Mustard Oil", "Awadhi Kakori Kebab with Ulte Tawe Ka Paratha", "Lucknow Nihari with Khamiri Roti", 
+      "Varanasi Malaiyo (Winter Saffron Dew Foam)", "Kanpur Thaggu Ke Laddu with Badam Khoya", "Allahabadi Tehri (Spiced Turmeric Veg Rice)", 
+      "Awadhi Shahi Tukda with Rabri", "Benarasi Chooda Matar (Winter Spiced Poha)", "Purvanchal Fara (Steamed Lentil Dumplings)", 
+      "Rampuri Mutton Taar Korma", "Bareilly Seekh Kebabs with Green Chutney", "Meerut Revdi & Gajak", 
+      "Aligarh Barula Fried Spiced Baby Potatoes", "Jaunpur Imarti with Rabri", "Banarasi Paan Flavored Kulfi", 
+      "Lucknow Pasanda Kebab", "Awadhi Galawati with Warqi Paratha", "Kanpur Banne Nawab Dum Biryani", 
+      "Ayodhya Peda & Kheer Prasad", "Jhansi Bundeli Gosht Curry", "Varanasi Baati Chokha with Roasted Brinjal"
+    ];
+
+    // 4. DELHI DELICACIES & STREET STAPLES
+    const delhiDishes = [
+      "Chandni Chowk Chole Bhature with Pickled Chillies", "Old Delhi Butter Chicken with Garlic Butter Naan", "Lajpat Nagar Ram Laddu with Radish Lachha", 
+      "Daryaganj Mutton Nihari & Sheermal", "Connaught Place Rajma Chawal Bowl", "Chache Di Hatti Kamla Nagar Chole Kulche", 
+      "Paranthe Wali Gali Mixed Stuffed Fried Parantha", "Karol Bagh Soya Malai Chaap Roll", "CR Park Kolkata Style Mutton Kathi Roll", 
+      "Jama Masjid Al Jawahar Mutton Korma", "Old Delhi Daulat Ki Chaat (Saffron Foam)", "Majnu Ka Tilla Tingmo & Buff Shapta", 
+      "Delhi University North Campus Egg Cheese Roll", "Pandara Road Gulati Dal Makhani & Butter Naan", "Nizamuddin Ghalib Kebab Corner Seekh Kebabs", 
+      "Natraj Dahi Bhalla & Aloo Tikki Chandni Chowk", "Giani Ice Cream Rabri Faluda Bowl", "Kake Da Hotel Butter Chicken & Keema Naan", 
+      "Delhi 6 Aslam Butter Cream Chicken", "Chittaranjan Park Puchka & Ghugni Chaat", "Tilak Nagar Amritsari Chur Chur Naan Thali", 
+      "Bengali Sweet House Chole Tikki Chaat", "Kashmere Gate Sita Ram Diwan Chand Chole Bhature", "South Extension Bombay Bhel Puri Stalls", 
+      "Khan Market Art Deco Chicken Shawarma", "Delhi Cantt Army Mess Mutton Curry & Rice", "Okhla Jamia Moradabadi Yakhni Biryani", 
+      "Sarojini Nagar Market Momos with Red Garlic Chutney", "Moti Mahal Original Tandoori Chicken", "Old Delhi Shahi Paneer with Roomali Roti"
+    ];
+
+    // Variations / styles generator to cross 300+ authentic regional catalog entries
+    const culinaryStyles = [
+      "Classic Street Cart", "Heritage Restaurant Preparation", "Hostel Sharing Combo", 
+      "Late Night Spiced Tawa Fry", "Traditional Ghee Roasted"
+    ];
+
+    let itemCounter = 0;
+
+    // A. Inject Mathikere Local spots
+    mathikereSpecialties.forEach(m => {
+      culinaryStyles.forEach(style => {
+        itemCounter++;
+        const id = `mathikere_${itemCounter}_${m.name.toLowerCase().replace(/[^a-z0-9]/g, '_')}`;
+        foodDB[id] = {
+          id: id,
+          name: `${style} ${m.name}`,
+          region: "Mathikere / MSRIT Spot",
+          desc: `${m.desc} Popular around ${m.loc}.`,
+          risk: m.risk,
+          harms: [
+            "High glycemic density triggers reactive hypoglycemia and afternoon fatigue.",
+            "Reused vegetable oil elevates cellular lipid peroxidation."
+          ],
+          hacks: createStandardHacks('carb')
+        };
+      });
+    });
+
+    // B. Inject Karnataka Delicacies
+    karnatakaDishes.forEach(dish => {
+      culinaryStyles.slice(0, 3).forEach(style => {
+        itemCounter++;
+        const id = `karnataka_${itemCounter}_${dish.toLowerCase().replace(/[^a-z0-9]/g, '_')}`;
+        foodDB[id] = {
+          id: id,
+          name: `${style} ${dish}`,
+          region: "Karnataka State",
+          desc: `Traditional Karnataka specialty prepared in ${style.toLowerCase()} fashion.`,
+          risk: dish.includes("Dosa") || dish.includes("Pak") || dish.includes("Ghee") ? "HIGH" : "MODERATE",
+          harms: [
+            "Refined polished rice or deep frying delays arterial clearance.",
+            "High glycemic load triggers steep glucose spikes without fiber buffer."
+          ],
+          hacks: createStandardHacks('karnataka')
+        };
+      });
+    });
+
+    // C. Inject Uttar Pradesh Delicacies
+    upDishes.forEach(dish => {
+      culinaryStyles.slice(0, 3).forEach(style => {
+        itemCounter++;
+        const id = `up_${itemCounter}_${dish.toLowerCase().replace(/[^a-z0-9]/g, '_')}`;
+        foodDB[id] = {
+          id: id,
+          name: `${style} ${dish}`,
+          region: "Uttar Pradesh",
+          desc: `Authentic UP delicacy prepared in authentic ${style.toLowerCase()} style.`,
+          risk: dish.includes("Kebab") || dish.includes("Korma") || dish.includes("Jalebi") ? "VERY HIGH" : "HIGH",
+          harms: [
+            "Heavy animal tallows or clarified butter combined with refined maida elevate postprandial triglycerides.",
+            "Lack of bioavailable fiber increases digestive transit stress."
+          ],
+          hacks: createStandardHacks('up')
+        };
+      });
+    });
+
+    // D. Inject Delhi Delicacies
+    delhiDishes.forEach(dish => {
+      culinaryStyles.slice(0, 3).forEach(style => {
+        itemCounter++;
+        const id = `delhi_${itemCounter}_${dish.toLowerCase().replace(/[^a-z0-9]/g, '_')}`;
+        foodDB[id] = {
+          id: id,
+          name: `${style} ${dish}`,
+          region: "Delhi Staples",
+          desc: `Famous Delhi preparation served in traditional ${style.toLowerCase()} culinary style.`,
+          risk: dish.includes("Bhature") || dish.includes("Butter") || dish.includes("Parantha") ? "VERY HIGH" : "HIGH",
+          harms: [
+            "Fried bleached flour combined with reheated seed oils burdens endothelial compliance.",
+            "Steep post-meal insulin spike followed by glycemic drop."
+          ],
+          hacks: createStandardHacks('delhi')
+        };
+      });
+    });
+
+    // Master hostel light-cooking & elite hacks
+    const kettleAndInductionHacks = [
+      {name:'Electric Kettle Steamed Eggs (2 pcs)',cost:24,healthScore:9.8,method:'Kettle',desc:'Simple complete protein prepared with hot water.'},
+      {name:'Kettle Sprouted Moong & Black Pepper Broth',cost:30,healthScore:9.5,method:'Kettle',desc:'Warm fiber and plant-protein broth.'},
+      {name:'Kettle Rolled Oats & Chia Gel',cost:45,healthScore:9.2,method:'Kettle',desc:'Beta-glucan and chia-rich breakfast bowl.'},
+      {name:'Induction Tofu / Paneer Sear',cost:85,healthScore:9.4,method:'Induction',desc:'High-protein pan-seared meal addition.'},
+      {name:'Induction Mushroom Broth',cost:110,healthScore:9.6,method:'Induction',desc:'Comforting, savory light-cooking option.'}
+    ];
+
+    const eliteBeyondThousandHacks = [
+      {name:'Standardized Berberine & Chromium Complex',cost:380,healthScore:9.5,desc:'A clinical-style metabolic support option.'},
+      {name:'High-Dose Liposomal CoQ10 & Ubiquinol',cost:780,healthScore:9.7,desc:'Premium antioxidant-support option.'},
+      {name:'Hydrolyzed Marine Collagen Peptide',cost:1400,healthScore:9.7,desc:'Premium peptide supplement option.'},
+      {name:'Clinical Microbiome Synbiotic',cost:1800,healthScore:9.6,desc:'Advanced gut-health formulation.'}
+    ];
+
+    function loadSavedProfiles() {
+      const users = JSON.parse(localStorage.getItem('nutriscale_users') || '[]');
+      const c = document.getElementById('existingProfilesContainer'), list = document.getElementById('recentUsersList');
+      list.innerHTML = '';
+      if (users.length) {
+        c.classList.remove('hidden');
+        users.forEach(u => {
+          const b=document.createElement('button');
+          b.className='rounded-xl border border-emerald-200 bg-white px-3 py-1.5 text-xs font-bold text-emerald-800 hover:bg-emerald-50 transition';
+          b.textContent=u; b.onclick=()=>document.getElementById('userNameInput').value=u; list.appendChild(b);
+        });
+      }
+    }
+
+    function handleUserSubmit() {
+      currentUser=document.getElementById('userNameInput').value.trim() || 'MSRIT Student';
+      let users=JSON.parse(localStorage.getItem('nutriscale_users')||'[]');
+      if(!users.includes(currentUser)){users.unshift(currentUser);localStorage.setItem('nutriscale_users',JSON.stringify(users.slice(0,5)));}
+      document.getElementById('stepUser').classList.add('hidden'); document.getElementById('stepLanguage').classList.remove('hidden');
+    }
+
+    function backToStep0(){document.getElementById('stepLanguage').classList.add('hidden');document.getElementById('stepUser').classList.remove('hidden');}
+    function setInitialLanguage(lang){currentLang=lang;document.getElementById('stepLanguage').classList.add('hidden');document.getElementById('stepBudget').classList.remove('hidden');}
+    function backToStep1(){document.getElementById('stepBudget').classList.add('hidden');document.getElementById('stepLanguage').classList.remove('hidden');}
+    function handleOnboardingSlider(v){currentBudget=+v;syncBudget();}
+
+    function syncBudget(){
+      ['onboardingBudgetText','sliderValueText','activeBudgetBadge'].forEach(id=>{
+        const el = document.getElementById(id);
+        if(el) el.textContent=`₹${currentBudget}`;
+      });
+      document.getElementById('onboardingSlider').value=currentBudget;
+      document.getElementById('mainBudgetSlider').value=currentBudget;
+    }
+
+    function confirmOnboarding(){
+      document.getElementById('onboardingModal').classList.add('hidden');
+      document.getElementById('mainApp').classList.remove('hidden');
+      setLanguage(currentLang);
+      updateMasterCounters();
+      renderCapturedKeywords();
+      
+      // Auto select first loaded dish
+      const firstKey = Object.keys(foodDB)[0];
+      selectMeal(firstKey, false);
+    }
+
+    function returnToOnboarding(){
+      document.getElementById('mainApp').classList.add('hidden');
+      document.getElementById('onboardingModal').classList.remove('hidden');
+      document.getElementById('stepBudget').classList.add('hidden');
+      document.getElementById('stepLanguage').classList.add('hidden');
+      document.getElementById('stepUser').classList.remove('hidden');
+      loadSavedProfiles();
+    }
+
+    function setLanguage(lang){
+      currentLang=lang;
+      document.getElementById('voiceLangLabel').textContent=lang==='hi-IN'?'हिंदी':'English';
+      document.getElementById('btnHindi').className=lang==='hi-IN'?'rounded-lg bg-emerald-700 px-2.5 py-1 text-xs font-bold text-white shadow-xs':'rounded-lg px-2.5 py-1 text-xs font-bold text-slate-500 hover:text-emerald-800';
+      document.getElementById('btnEnglish').className=lang==='en-IN'?'rounded-lg bg-emerald-700 px-2.5 py-1 text-xs font-bold text-white shadow-xs':'rounded-lg px-2.5 py-1 text-xs font-bold text-slate-500 hover:text-emerald-800';
+      updateSpokenTextBox();
+    }
+
+    function handleMainSlider(v){
+      currentBudget=+v;
+      syncBudget();
+      if(activeKey) updateMealView(foodDB[activeKey]);
+    }
+
+    // SEARCH ENHANCED ACROSS 300+ ITEMS
+    function handleChatSubmit(e){
+      e.preventDefault(); 
+      const input=document.getElementById('chatInput'), q=input.value.trim();
+      if(!q) return;
+      appendChatMessage(currentUser, q, 'user');
+      input.value='';
+      storeKeywords(q);
+      const key=searchFoodDatabase(q);
+      if(key){
+        appendChatMessage('NutriScale AI', `Identified: <strong>${foodDB[key].name}</strong> (${foodDB[key].region}). Loaded buffers within ceiling ₹${currentBudget}.`, 'ai');
+        selectMeal(key);
+      } else {
+        appendChatMessage('NutriScale AI', `Could not find an exact match for "${q}". Search from 300+ options like Neer Dosa, Tunday Kebab, Chole Bhature, Kathi Roll, or check the Stored Menu!`, 'ai');
+      }
+    }
+
+    function searchFoodDatabase(q){
+      q=q.toLowerCase().trim();
+      // 1. Direct name or id contains
+      for(const [k, v] of Object.entries(foodDB)) {
+        if(v.name.toLowerCase() === q || k.toLowerCase() === q) return k;
+      }
+      for(const [k, v] of Object.entries(foodDB)) {
+        if(v.name.toLowerCase().includes(q)) return k;
+      }
+      // 2. Tokenized search
+      const tokens = q.split(/\s+/).filter(t => t.length > 2);
+      let bestMatch = null;
+      let highestScore = 0;
+      for(const [k, v] of Object.entries(foodDB)) {
+        let score = 0;
+        tokens.forEach(tok => {
+          if(v.name.toLowerCase().includes(tok)) score += 3;
+          if(v.desc.toLowerCase().includes(tok)) score += 1;
+        });
+        if(score > highestScore) {
+          highestScore = score;
+          bestMatch = k;
+        }
+      }
+      return highestScore > 0 ? bestMatch : null;
+    }
+
+    function appendChatMessage(sender, text, type){
+      const d=document.createElement('div');
+      d.className=(type==='user'?'message-user ml-8':'message-ai mr-8')+' rounded-2xl p-3.5 text-sm leading-relaxed transition';
+      d.innerHTML=`
+        <div class="flex items-center justify-between mb-1">
+          <strong class="${type==='user'?'text-emerald-100 font-extrabold':'text-emerald-900 font-black'} flex items-center gap-1.5 text-xs">
+            <span>${type==='user'?'👤':'🤖'}</span> ${sender}
+          </strong>
+          <span class="text-[10px] ${type==='user'?'text-emerald-200':'text-slate-400'} font-mono">Just now</span>
+        </div>
+        <div>${text}</div>
+      `;
+      const box=document.getElementById('chatMessages');
+      box.appendChild(d);
+      box.scrollTop=box.scrollHeight;
+    }
+
+    function storeKeywords(raw){
+      const key=`nutriscale_keywords_${currentUser}`, words=raw.toLowerCase().match(/[a-z]{3,}/g)||[], old=JSON.parse(localStorage.getItem(key)||'[]');
+      words.reverse().forEach(w=>{if(!old.includes(w))old.unshift(w)});
+      localStorage.setItem(key,JSON.stringify(old.slice(0,35)));
+      renderCapturedKeywords();
+    }
+
+    function renderCapturedKeywords(){
+      const c=document.getElementById('capturedKeywordsContainer'), arr=JSON.parse(localStorage.getItem(`nutriscale_keywords_${currentUser}`)||'[]');
+      c.innerHTML='';
+      document.getElementById('keywordCount').textContent=arr.length;
+      if(!arr.length){ c.textContent='No keywords stored yet'; return; }
+      arr.forEach(w=>{
+        const b=document.createElement('button');
+        b.className='rounded-lg bg-emerald-100/80 px-2 py-0.5 text-[11px] font-semibold text-emerald-800 hover:bg-emerald-200 transition';
+        b.textContent='#'+w;
+        b.onclick=()=>{ document.getElementById('chatInput').value=w; document.querySelector('form').requestSubmit(); };
+        c.appendChild(b);
+      });
+    }
+
+    function selectMeal(key, speak=true){
+      activeKey=key;
+      updateMealView(foodDB[key]);
+      logMealToHistory(key);
+      if(speak) speakSelectedOptimalGuidance();
+    }
+
+    function updateMealView(meal){
+      document.getElementById('detailTitle').textContent=meal.name;
+      document.getElementById('detailDesc').textContent=`${meal.desc} (${meal.region})`;
+      const r=document.getElementById('detailRiskBadge');
+      r.textContent=meal.risk+' RISK';
+      r.className='rounded-full px-3 py-1 text-xs font-bold font-mono border '+(
+        meal.risk==='MODERATE'?'bg-amber-50 text-amber-800 border-amber-200':
+        meal.risk==='HIGH'?'bg-orange-50 text-orange-800 border-orange-200':
+        'bg-rose-50 text-rose-800 border-rose-200'
+      );
+      document.getElementById('modalHarmsList').innerHTML=meal.harms.map(h=>`<p>• ${h}</p>`).join('');
+      renderCategory('alternativesGrid', meal.hacks, 'emerald', document.getElementById('hiddenDirectCounter'), 'card-direct');
+      renderCategory('kettleInductionGrid', kettleAndInductionHacks, 'sky', document.getElementById('hiddenKettleCounter'), 'card-kettle');
+      renderCategory('beyondThousandGrid', eliteBeyondThousandHacks, 'purple', document.getElementById('hiddenEliteCounter'), 'card-elite');
+      updateSpokenTextBox();
+    }
+
+    function renderCategory(id, items, color, counter, cardClass){
+      const eligible=items.filter(x=>x.cost<=currentBudget), c=document.getElementById(id);
+      counter.textContent=items.length-eligible.length ? `(${items.length-eligible.length} over ceiling hidden)` : '';
+      c.innerHTML='';
+      if(!eligible.length){
+        c.innerHTML=`<p class="col-span-full rounded-xl bg-white/80 border border-slate-200 p-3 text-xs font-medium text-slate-500 text-center">No options currently qualify within ₹${currentBudget}. Adjust the budget slider to unlock.</p>`;
+        return;
+      }
+      eligible.forEach(x=>{
+        const d=document.createElement('article');
+        d.className=`alt-card ${cardClass} rounded-2xl p-3.5 shadow-xs`;
+        d.innerHTML=`
+          <div class="flex items-start justify-between gap-2">
+            <h4 class="text-xs font-black text-slate-900 leading-snug">${x.name}</h4>
+            <span class="shrink-0 rounded-lg bg-${color}-100 border border-${color}-300 px-2 py-0.5 text-xs font-black font-mono text-${color}-900">₹${x.cost}</span>
+          </div>
+          <p class="mt-1.5 text-[11px] leading-relaxed text-slate-600">${x.desc}</p>
+          <div class="mt-2.5 flex items-center justify-between border-t border-slate-100 pt-2 text-[10px] font-bold text-${color}-800">
+            <span class="flex items-center gap-1">${x.method ? '⚡ '+x.method : '🥗 Clinical buffer'}</span>
+            <span class="font-mono bg-${color}-50 px-1.5 py-0.2 rounded">★ ${x.healthScore}/10</span>
+          </div>
+        `;
+        c.appendChild(d);
+      });
+    }
+
+    function getSpokenSelections(){
+      if(!activeKey) return null;
+      const m=foodDB[activeKey];
+      const direct=m.hacks.filter(x=>x.cost<=currentBudget).sort((a,b)=>b.healthScore-a.healthScore)[0];
+      const k=kettleAndInductionHacks.find(x=>x.cost<=currentBudget);
+      const e=eliteBeyondThousandHacks.find(x=>x.cost<=currentBudget);
+      return {direct, k, e};
+    }
+
+    function updateSpokenTextBox(){
+      const p=getSpokenSelections();
+      if(!p) return;
+      const parts=[
+        p.direct && `Best Direct Buffer: ${p.direct.name} (₹${p.direct.cost})`,
+        p.k && `Light-Cooking Hack: ${p.k.name}`,
+        p.e && `Elite Intervention: ${p.e.name}`
+      ].filter(Boolean);
+      document.getElementById('vernacularTextBox').textContent=currentLang==='hi-IN'
+        ? `₹${currentBudget} बजट में: ${parts.join(' • ') || 'कोई विकल्प उपलब्ध नहीं है।'}`
+        : `Within ₹${currentBudget}: ${parts.join(' • ') || 'No options currently qualify within budget.'}`;
+    }
+
+    function speakSelectedOptimalGuidance(){
+      const p=getSpokenSelections();
+      if(!p || !('speechSynthesis' in window)) return;
+      synth.cancel();
+      const u=new SpeechSynthesisUtterance(document.getElementById('vernacularTextBox').textContent);
+      u.lang=currentLang;
+      synth.speak(u);
+    }
+
+    function openComparisonModal(){document.getElementById('comparisonModal').classList.remove('hidden');}
+    function closeComparisonModal(){document.getElementById('comparisonModal').classList.add('hidden');}
+
+    function logMealToHistory(key){
+      const sk=`nutriscale_history_${currentUser}`, a=JSON.parse(localStorage.getItem(sk)||'[]'), m=foodDB[key];
+      const item={id:key, name:m.name, desc:m.desc, risk:m.risk, budget:currentBudget};
+      const i=a.findIndex(x=>x.id===key);
+      if(i>=0) a.splice(i,1);
+      a.unshift(item);
+      localStorage.setItem(sk, JSON.stringify(a));
+      document.getElementById('historyCounterBadge').textContent=a.length;
+    }
+
+    function openHistoryPage(){
+      document.getElementById('mainApp').classList.add('hidden');
+      document.getElementById('historyPage').classList.remove('hidden');
+      document.getElementById('historyProfileName').textContent=currentUser;
+      document.getElementById('historyMeta').textContent=`Preferred language: ${currentLang==='hi-IN'?'हिंदी':'English'} · Active budget: ₹${currentBudget}`;
+      renderHistoryCards();
+    }
+
+    function closeHistoryPage(){
+      document.getElementById('historyPage').classList.add('hidden');
+      document.getElementById('mainApp').classList.remove('hidden');
+    }
+
+    function renderHistoryCards(){
+      const a=JSON.parse(localStorage.getItem(`nutriscale_history_${currentUser}`)||'[]'), c=document.getElementById('historyItemsContainer');
+      c.innerHTML='';
+      document.getElementById('historyTotalCount').textContent=a.length;
+      if(!a.length){
+        c.innerHTML='<div class="soft-card rounded-3xl p-8 text-center text-slate-500">No food queries logged yet.</div>';
+        return;
+      }
+      a.forEach(x=>{
+        const d=document.createElement('div');
+        d.className='soft-card flex flex-col gap-3 rounded-2xl p-4 sm:flex-row sm:items-center sm:justify-between border-emerald-100 hover:border-emerald-300 transition';
+        d.innerHTML=`
+          <div>
+            <h3 class="font-black text-emerald-950">${x.name}</h3>
+            <p class="mt-1 text-sm text-slate-600">${x.desc}</p>
+            <p class="mt-2 text-xs font-bold text-emerald-700">${x.risk} · Budget ₹${x.budget}</p>
+          </div>
+          <button class="rounded-xl bg-emerald-700 px-3.5 py-2 text-xs font-bold text-white hover:bg-emerald-800 transition">Reload</button>
+        `;
+        d.querySelector('button').onclick=()=>{ closeHistoryPage(); selectMeal(x.id); };
+        c.appendChild(d);
+      });
+    }
+
+    function clearUserHistory(){
+      localStorage.removeItem(`nutriscale_history_${currentUser}`);
+      localStorage.removeItem(`nutriscale_keywords_${currentUser}`);
+      renderHistoryCards();
+      renderCapturedKeywords();
+      document.getElementById('historyCounterBadge').textContent='0';
+    }
+
+    function updateMasterCounters(){
+      const totalUnits = Object.keys(foodDB).length;
+      document.getElementById('topDbCounter').textContent = `${totalUnits}+`;
+      const catCount = document.getElementById('catalogCount');
+      if (catCount) catCount.textContent = `${totalUnits}+ Delicacies Loaded`;
+    }
+
+    function openCatalogPage(){
+      document.getElementById('mainApp').classList.add('hidden');
+      document.getElementById('catalogPage').classList.remove('hidden');
+      populateCatalogGrid();
+    }
+
+    function closeCatalogPage(){
+      document.getElementById('catalogPage').classList.add('hidden');
+      document.getElementById('mainApp').classList.remove('hidden');
+    }
+
+    function handleCatalogSearch(q){
+      catalogSearchQuery=q.toLowerCase();
+      populateCatalogGrid();
+    }
+
+    function populateCatalogGrid(){
+      const entries=Object.entries(foodDB).filter(([,x])=>(x.name+x.desc+x.region).toLowerCase().includes(catalogSearchQuery)), g=document.getElementById('catalogGrid');
+      g.innerHTML='';
+      document.getElementById('catalogCount').textContent=`${entries.length} dishes found`;
+      
+      // Render capped to 60 at a time for fast DOM rendering
+      entries.slice(0, 60).forEach(([k,x])=>{
+        const d=document.createElement('article');
+        d.className='soft-card flex flex-col justify-between rounded-3xl p-5 border-emerald-100 hover:border-emerald-300 transition shadow-xs';
+        d.innerHTML=`
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">${x.region}</span>
+              <span class="text-[10px] font-bold font-mono px-2 py-0.5 rounded-full ${x.risk === 'VERY HIGH' ? 'bg-red-50 text-red-700' : 'bg-orange-50 text-orange-700'}">${x.risk}</span>
+            </div>
+            <h2 class="mt-2 font-black text-emerald-950 text-sm">${x.name}</h2>
+            <p class="mt-1 text-xs text-slate-600 line-clamp-2">${x.desc}</p>
+          </div>
+          <button class="mt-4 rounded-xl bg-emerald-700 px-3.5 py-2 text-xs font-bold text-white hover:bg-emerald-800 transition">Query Food in Chat 🎙️</button>
+        `;
+        d.querySelector('button').onclick=()=>{
+          closeCatalogPage();
+          appendChatMessage(currentUser, x.name, 'user');
+          selectMeal(k);
+        };
+        g.appendChild(d);
+      });
+    }
+
+    window.onload=()=>{
+      loadSavedProfiles();
+      updateMasterCounters();
+    };
+  </script>
+</body>
+</html>
